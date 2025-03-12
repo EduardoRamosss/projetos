@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio - Projetos Eduardo Ramos</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        /* Reset de margens e preenchimentos para melhor controle do layout */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        /* Estilo geral do corpo */
+        body {
+            background-color: #f4f4f4;
+            text-align: center;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        /* Cabeçalho com fundo escuro e texto branco */
+        header {
+            background: #3b3197;
+            color: white;
+            padding: 40px 20px;
+            font-size: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+        }
+        
+        /* Imagem de perfil com borda arredondada e contorno branco */
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid white;
+        }
+        
+        /* Container principal com largura limitada para boa legibilidade */
+        .container {
+            max-width: 900px;
+            margin: auto;
+            padding: 20px;
+            text-align: left;
+        }
+        
+        /* Estilização dos títulos */
+        h2 {
+            border-bottom: 3px solid #333;
+            display: inline-block;
+            padding-bottom: 5px;
+            margin-top: 20px;
+            font-size: 28px;
+            font-weight: 600;
+        }
+        
+        /* Estilização dos blocos de projetos */
+        .projeto {
+            background: white;
+            padding: 20px;
+            margin: 15px 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            transition: transform 0.3s ease-in-out;
+        }
+        
+        /* Efeito de zoom ao passar o mouse sobre o projeto */
+        .projeto:hover {
+            transform: scale(1.03);
+        }
+        
+        /* Estilização das imagens dentro dos projetos */
+        .projeto img {
+            max-width: 100%;
+            height: auto;
+            margin-top: 10px;
+            border-radius: 5px;
+            display: block;
+            margin: 10px auto;
+        }
+        
+        /* Rodapé com fundo escuro */
+        footer {
+            margin-top: 40px;
+            padding: 15px;
+            background: #3b3197;
+            color: white;
+            text-align: center;
+        }
+        
+        /* Estilo dos links */
+        a {
+            color: #0066cc;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        
+        /* Sublinha links ao passar o mouse */
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Melhorias na proporção das imagens */
+        .projeto img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+            margin: 10px 0;
+        }
+
+        /* Espaçamento entre as imagens */
+        .projeto img + img {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="foto_terno.jpeg" alt="Foto de Eduardo" class="profile-img">
+        <h1>Eduardo - Portfólio</h1>
+    </header>
+    
+    <div class="container">
+        <h2>Sobre Mim</h2>
+        <p> Sou estudante de Engenharia Elétrica na UFSJ e, durante minha atuação na EJEL, participei do desenvolvimento de projetos elétricos e fotovoltaicos, com foco em dimensionamento de cargas, quadros de distribuição e integração de sistemas elétricos e de automação.
+
+            Além disso, desenvolvi habilidades em softwares como AutoCAD e Excel para visualização e cálculos técnicos, contribuindo para a eficiência e precisão dos projetos. Busco oportunidades para aplicar meus conhecimentos técnicos e minha experiência em projetos desafiadores e inovadores na área de engenharia elétrica.</p>
+        
+        <h2>Projetos</h2>
+        <!-- Seção de projetos -->
+        <div class="projeto">
+            <h3>Projeto Elétrico 01</h3>
+            <p>Projeto Elétrico e de Rede Lógica – Residência de Alto Padrão</p>
+
+            <p> Desenvolvimento de um projeto elétrico para uma residência de alto padrão, de dois andares, seguindo as normas da CEMIG. 
+                O projeto incluiu o dimensionamento do Quadro de Distribuição de Carga (QDC), considerando uma estação de carregamento 
+                para veículo elétrico, Tomadas de Uso Específico (TUE) para máquinas industriais e a instalação de sistemas de 
+                ar-condicionado em todos os cômodos, evidenciando a alta complexidade da edificação.
+                
+                Além disso, foi realizada a integração do projeto de rede lógica com o projeto elétrico, garantindo a alocação eficiente 
+                dos pontos de internet, câmeras de segurança, televisores e rede telefônica. O projeto foi entregue com excelência e 
+                obteve uma avaliação de satisfação nota 10.</p>
+            <img src="projeto inteiro.png" alt="Imagem do Projeto Inteiro">
+            <p><a href="pel 01.dwg" target="_blank">Baixar DWG do projeto</a></p>
+            <p><a href="pel 01.pdf" target="_blank">Baixar PDF do projeto</a></p>
+        </div>
+        
+        <div class="projeto">
+            <h3>Projeto Elétrico 02</h3>
+            <p>Projeto Elétrico – Prédio de 4 Andares</p>
+
+            <p>Desenvolvimento do projeto elétrico para um edifício de quatro andares, composto por duas lojas no térreo e dois 
+                apartamentos nos andares superiores. O projeto incluiu o dimensionamento do diagrama unifilar, cálculo do quadro de 
+                cargas, agrupamento coletivo e elaboração da planta de situação.
+                
+                Trata-se de um projeto de alta complexidade e padrão elevado, exigindo precisão no planejamento e execução para garantir 
+                eficiência e segurança na instalação elétrica.</p>
+            <img src="projeto eletrico02.png" alt="Imagem do Projeto 2">
+            <img src="diagrama unifilar.png" alt="Imagem do Projeto 2">
+            <img src="quadro de cargas e agrupamento coletivo.png" alt="Imagem do Projeto 2">
+            <img src="rede logica 02.png" alt="Imagem do Projeto 2">
+            <p><a href="pel 02 (1).dwg" target="_blank">Baixar DWG do projeto</a></p>
+            <p><a href="pel 02 agrupado.pdf" target="_blank">Baixar PDF do projeto</a></p>
+        </div>
+        
+        <div class="projeto">
+            <h3>Projeto Elétrico 03</h3>
+            <p>Projeto Elétrico – Pousada de Alto Padrão em Tiradentes</p>
+
+             <p> Desenvolvimento do projeto elétrico para uma pousada de alto padrão em Tiradentes, um projeto de grande relevância 
+                pessoal e profissional. A complexidade do projeto se deu pelo dimensionamento individual dos Quadros de Distribuição 
+                de Carga (QDCs) para cada quarto, garantindo maior eficiência e segurança na distribuição elétrica.
+                
+                Além disso, a pousada foi projetada para atender às demandas modernas de mobilidade sustentável, incluindo um 
+                estacionamento com infraestrutura para carregamento de veículos elétricos. Esse projeto representa não apenas um 
+                desafio técnico, mas também um marco significativo, pois contribuirá para a transformação do local em um espaço 
+                sofisticado e acolhedor.</p>
+            <img src="projeto eletrico 03.png" alt="Imagem do Projeto 3">
+            <img src="rede logica 03.png" alt="Imagem do Projeto 3">
+            <img src="planta situação 03.png" alt="Imagem do Projeto 3">
+            <p><a href="pel 04 (1).dwg" target="_blank">Baixar DWG do projeto</a></p>
+            <p><a href="pel 04.pdf" target="_blank">Baixar PDF do projeto</a></p>
+        </div>
+
+        <div class="projeto">
+            <h3>Projeto Elétrico 04</h3>
+            <p>Este projeto foi desenvolvido para uma residência de alto padrão, composta por três pavimentos, com foco na integração de tecnologias inteligentes para proporcionar conforto, eficiência e modernidade aos moradores.</p>
+            <p>O sistema elétrico foi cuidadosamente projetado para atender às exigências do cliente, garantindo automação completa da iluminação, interruptores e dispositivos eletrônicos por meio de assistentes virtuais. A residência conta com um alto nível de interligação entre os sistemas.</p>
+            <p>Além disso, o projeto contemplou a instalação de infraestrutura para carregamento de veículos elétricos, garantindo compatibilidade com padrões modernos de mobilidade sustentável. O planejamento detalhado e a execução rigorosa foram essenciais para atender todas as expectativas do cliente, resultando em uma avaliação de satisfação máxima.</p>
+
+            <img src="projeto eletrico 04.png" alt="Imagem do Projeto 4">
+            <img src="projeto eletrico 04 pt2.png" alt="Imagem do Projeto 4">
+            <img src="rede logica 04.png" alt="Imagem do Projeto 3">
+            <img src="diagrama unifilar 04.png" alt="Imagem do Projeto 3">
+            <p><a href="pel 03 (1).dwg" target="_blank">Baixar DWG do projeto</a></p>
+            <p><a href="pel 03 (1)_merged.pdf" target="_blank">Baixar PDF do projeto</a></p>
+
+        </div>
+
+        <div class="projeto">
+            <h3>Projeto Elétrico 05</h3>
+            <p>Projeto Elétrico – Hospital de Alto Padrão</p>
+
+                <p> O desenvolvimento do projeto elétrico para o hospital de 6.000 m², realizado pela equipe da EJEL, foi o desafio mais complexo e exigente já enfrentado. A magnitude e o nível de sofisticação do projeto exigiram uma abordagem minuciosa e técnica em todas as suas fases. Participei ativamente de todas as etapas do processo, desde o planejamento até a execução, garantindo que cada detalhe fosse meticulosamente atendido.
+                
+                A complexidade do projeto envolve o dimensionamento preciso e a melhoria dos Quadros de Distribuição de Carga (QDCs) individuais para cada ambiente, garantindo eficiência e segurança na distribuição elétrica. Além disso, foi necessário adaptar as instalações para suportar a infraestrutura crítica do hospital, como equipamentos de alto desempenho, sistemas de emergência e requisitos específicos da área de saúde.
+                
+                O projeto foi concluído com excelência, atendendo a todas as normas de segurança e qualidade, e foi reconhecido com o prêmio de "Projeto do Ano" pela Federação Mineira de Empresas Juniores, um reflexo do alto padrão e dedicação que a equipe da EJEL se envolveu na execução deste desafio.</p>
+            <img src="hosp01.png" alt="Imagem do Projeto 3">
+            <img src="hosp02.png" alt="Imagem do Projeto 3">
+            <img src="hosp03.png" alt="Imagem do Projeto 3">
+            <img src="redehosp01.png" alt="Imagem do Projeto 3">
+            <img src="redehosp02.png" alt="Imagem do Projeto 3">
+            <img src="redehosp03.png" alt="Imagem do Projeto 3">
+            <img src="diagrama unifilar hosp.png" alt="Imagem do Projeto 3">
+            <p><a href="PEL 104 Adequação Finalizado.dwg" target="_blank">Baixar DWG do projeto</a></p>
+        </div>
+
+        <div class="projeto">
+            <h3>Projeto Fotovolaico 01</h3>
+            <p>Este projeto fotovoltaico foi desenvolvido para atender às necessidades energéticas da residência, garantindo eficiência e conformidade com o padrão CEMIG. Inclui o dimensionamento das placas solares , levando em consideração o consumo e a localização da residência, para definir a quantidade e disposição ideais.
+
+                Foi elaborado um memorial descritivo detalhando todos os aspectos técnicos do sistema, como dimensionamento e execução, de acordo com as normas vigentes. O diagrama unifilar foi projetado para garantir a distribuição correta dos componentes do sistema, garantindo segurança e eficiência.
+                
+                A planta de situação foi criada para ilustrar a instalação do sistema fotovoltaico, facilitando uma análise do impacto no local.
+                
+                O projeto rigorosamente conforme as especificações da CEMIG, passa por uma solução energética sustentável e econômica, com alto desempenho para a residência..</p>
+            <img src="sfv20.png" alt="Imagem do Projeto 3">
+            <img src="sfv20 pt2.png" alt="Imagem do Projeto 3">
+            <img src="sfv20 pt 3.png" alt="Imagem do Projeto 3">
+        </div>
+
+        <div class="projeto">
+            <h3>Projeto fotovoltaico 02</h3>
+            <p>Este projeto fotovoltaico foi desenvolvido para atender às necessidades energéticas da residência, garantindo eficiência e conformidade com o padrão CEMIG. Inclui o dimensionamento das placas solares , levando em consideração o consumo e a localização da residência, para definir a quantidade e disposição ideais.
+
+                Foi elaborado um memorial descritivo detalhando todos os aspectos técnicos do sistema, como dimensionamento e execução, de acordo com as normas vigentes. O diagrama unifilar foi projetado para garantir a distribuição correta dos componentes do sistema, garantindo segurança e eficiência.
+                
+                A planta de situação foi criada para ilustrar a instalação do sistema fotovoltaico, facilitando uma análise do impacto no local.
+                
+                O projeto rigorosamente conforme as especificações da CEMIG, passa por uma solução energética sustentável e econômica, com alto desempenho para a residência..</p>
+                <img src="sfv 21.png" alt="Imagem do Projeto 3">
+                <img src="sfv 21 pt2.png" alt="Imagem do Projeto 3">
+                <img src="sfv 21 pt3.png" alt="Imagem do Projeto 3">
+    
+        </div>
+        
+        <h2>Contato</h2>
+        <p>Telefone: (21) 96585-7478</p>
+        <p>Email: eduardoramosufsj@gmail.com</p>
+        <p>LinkedIn: <a href="#">linkedin.com/in/eduardo</a></p>
+    </div>
+    
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; Eduardo de Souza Ramos. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
